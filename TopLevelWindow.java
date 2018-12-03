@@ -15,13 +15,13 @@ public class TopLevelWindow {
       frame.setLocationRelativeTo(null);
       frame.setPreferredSize(new Dimension(1000, 600));
       frame.setResizable(false);
-          frame.pack();
+      frame.pack();
       frame.setVisible(true);
    }
- 
-
+   
    
    public static void main(String[] args) {
       createWindow();
+      
    }
 } 
