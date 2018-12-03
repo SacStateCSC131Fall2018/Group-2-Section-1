@@ -13,10 +13,13 @@ public class TopLevelWindow {
       
       //Display the window.
       frame.setLocationRelativeTo(null);
-      frame.setPreferredSize(new Dimension(700, 400));
-      frame.pack();
+      frame.setPreferredSize(new Dimension(1000, 600));
+      frame.setResizable(false);
+          frame.pack();
       frame.setVisible(true);
    }
+   
+
    
    public static void main(String[] args) {
       createWindow();
