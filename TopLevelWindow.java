@@ -2,7 +2,8 @@
 import javax.swing.*;
 
 public class TopLevelWindow {
-   private static void createWindow() {
+
+   public static void createWindow() {
       //Create and set up the window.
       JFrame frame = new JFrame("Pirex");
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
