@@ -32,6 +32,13 @@ public class TopLevelWindow extends JFrame{
       
    }
    
+   //Add new Objects to the content pane
+   public void add(JComponent o, String layout)
+   {
+      this.getContentPane().add(o, layout);
+   
+   }
+   
    /*
    public static void main(String[] args) {
       createWindow();
