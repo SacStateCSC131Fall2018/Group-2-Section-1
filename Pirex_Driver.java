@@ -10,6 +10,7 @@ public class Pirex_Driver {
       //tabs.add("Load Documents", load, "Load documents to our Pirex");
       
       //add the tabs to our main window
+      JMenuBar menubar = new JMenuBar(
       main.add(tabs);
       
 		
