@@ -7,7 +7,9 @@ public class TabbedPane{
    	this.tabbedPane = new JTabbedPane();
    }
    
-   public void AddPanel(String name, JPanel panel, String description){
+   public void AddPanel(String name, String description){
+      
+      JPanel panel = new JPanel();
       this.tabbedPane.addTab(name,  null, panel, description);
       this.tabbedPane.setSelectedIndex(0);
    }
