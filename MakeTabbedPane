@@ -1,0 +1,14 @@
+public static JTabbedPane MakeTabbedPanel(){
+	JTabbedPane tabbedPane = new JTabbedPane();
+
+      JPanel panel1 = new JPanel();
+      tabbedPane.addTab("Search for Documents", null, panel1, "Does nothing");
+      tabbedPane.setSelectedIndex(0);
+          
+      JPanel panel2 = new JPanel();
+      tabbedPane.addTab("Load Documents", null, panel2, "Does nothing");
+          
+      JPanel panel3 = new JPanel();
+      tabbedPane.addTab("Summarize Documents", null, panel3, "Does nothing");
+      return tabbedPane;
+}
