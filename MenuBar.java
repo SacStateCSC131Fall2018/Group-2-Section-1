@@ -3,13 +3,12 @@ import javax.swing.*;
 
 public class MenuBar extends JMenuBar
 {
-      JMenuBar menuBar;
 	   JMenu editMenu, fileMenu, helpMenu, optionsMenu;
 	   JMenuItem item;
       public MenuBar()
       {
          super();
-         menuBar = new JMenuBar();
+         //this = new JMenuBar();
    
    		// The File menu
    		fileMenu = new JMenu("File");
@@ -30,7 +29,7 @@ public class MenuBar extends JMenuBar
          item = new JMenuItem("Exit");
    		fileMenu.add(item);
    		
-   		menuBar.add(fileMenu);
+   		this.add(fileMenu);
    
    		// The Edit menu
    		editMenu = new JMenu("Edit");
@@ -41,7 +40,7 @@ public class MenuBar extends JMenuBar
    		item = new JMenuItem("Paste");
    		editMenu.add(item);
    
-   		menuBar.add(editMenu);
+   		this.add(editMenu);
          //The Options Menu
          optionsMenu = new JMenu("Options");
          
@@ -51,7 +50,7 @@ public class MenuBar extends JMenuBar
          item = new JMenuItem("Sources");
          optionsMenu.add(item);
          
-         menuBar.add(optionsMenu);
+         this.add(optionsMenu);
    		// The Help menu
    		helpMenu = new JMenu("Help");
          item = new JMenuItem("Index");
@@ -60,7 +59,7 @@ public class MenuBar extends JMenuBar
    		item = new JMenuItem("About");
    		helpMenu.add(item);
    
-   		menuBar.add(helpMenu);
+   		this.add(helpMenu);
    
    		// The Menu bar
    }
