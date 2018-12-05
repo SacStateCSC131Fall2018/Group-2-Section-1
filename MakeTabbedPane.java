@@ -1,3 +1,6 @@
+import java.awt.*;
+import javax.swing.*;
+
 public static JTabbedPane MakeTabbedPanel(){
 	JTabbedPane tabbedPane = new JTabbedPane();
 
