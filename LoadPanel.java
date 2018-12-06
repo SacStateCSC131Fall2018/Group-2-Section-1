@@ -52,6 +52,6 @@ public class LoadPanel extends JPanel
 		panel.add(p3);
 		//MAINPANEL.add(panel); //added everything to main panel
 		
-		this.add(MAINPANEL, BorderLayout.NORTH);
+		this.add(panel, BorderLayout.NORTH);
    }
 }

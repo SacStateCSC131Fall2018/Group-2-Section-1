@@ -22,7 +22,7 @@ public class TopLevelWindow extends JFrame{
       mainFrame.setVisible(true);*/
       this.setLocationRelativeTo(null);
       this.setPreferredSize(new Dimension(1000, 600));
-      this.setResizable(false);
+      this.setResizable(true);
       this.pack();
       this.setVisible(true);
       //Layout:
