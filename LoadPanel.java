@@ -17,7 +17,7 @@ public class LoadPanel extends JPanel
       JPanel MAINPANEL = new JPanel();  // This panel is the mail panel and holds all the other panels
 		JPanel panel = new JPanel(new GridLayout(3,0)); //this panel creates a grid holds three panels
 		JPanel p1 = new JPanel(new FlowLayout());
-		JPanel p2 = new JPanel(new FlowLayout());
+		JPanel p2 = new JPanel(new BorderLayout());
 		JPanel p3 = new JPanel(new FlowLayout());
 		
 		JTextField topTxt = new JTextField("",30);
@@ -35,15 +35,19 @@ public class LoadPanel extends JPanel
 		
 		p1.add(topLabel);
 		p1.add(topTxt);
-		p2.add(fileType);
-		p2.add(types);
+      
+		p2.add(fileType, BorderLayout.WEST);
+		p2.add(types, BorderLayout.CENTER);
+      
 		p3.add(label);
 		p3.add(tf);
 		p3.add(label2);
 		p3.add(tf2);
+      
 		panel.add(p1);
 		panel.add(p2);
 		panel.add(p3);
+      
 		MAINPANEL.add(panel); //added everything to main panel
 		
 		frame.getContentPane().add(MAINPANEL, BorderLayout.NORTH);
