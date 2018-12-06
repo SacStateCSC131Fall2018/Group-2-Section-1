@@ -12,8 +12,8 @@ public class SummaryState extends JFrame{
       setSize(800,400);
       Container c = getContentPane();
       c.setLayout(new FlowLayout());
-      JLabel textBox = new JLabel("");
-      JScrollPane scroll = new JScrollPane();
+      JLabel textBox = new JLabel("abc",JLabel.LEFT);
+      JScrollPane scroll = new JScrollPane(textBox);
       scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
       c.add(textBox);
       c.add(scroll);
