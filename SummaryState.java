@@ -1,27 +1,29 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class SummaryState extends JPanel{
+public class SummaryState extends JFrame{
    //constructor
    public SummaryState(){
-      super();
+      super("Pirex");
       setLayout();
    }
    //Layout
    public void setLayout(){
-      //setSize(800,400);
-      //Container c = getContentPane();
-      this.setLayout(new BorderLayout());
-      JLabel textBox = new JLabel("a\nadjf\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nasdfjklsdjf\n\n\n\nlaksdjfk",JLabel.LEFT);
+      setSize(900,500);
+      setVisible(true);
+      Container c = getContentPane();
+      setLayout(new FlowLayout());
+      JLabel textBox = new JLabel("");
+      textBox.setVerticalAlignment(JLabel.TOP);
+      textBox.setPreferredSize(new Dimension(800,400));
       JScrollPane scroll = new JScrollPane(textBox);
       scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-      this.add(textBox, BorderLayout.CENTER);
-      this.add(scroll, BorderLayout.EAST);
-      //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      //setVisible(true);
+      JTabbedPane tab = new JTabbedPane();
+      tab.addTab("Summarize Document",scroll);
+      c.add(tab);
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
    }
-   /*
    public static void main(String[] args){
       SummaryState start = new SummaryState();
-   }*/
+   }
 }
