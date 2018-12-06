@@ -69,6 +69,7 @@ public class LoadPanel extends JPanel
 		panel.add(p1); //this adds to the panel that goes inside the main panel
 		panel.add(p2);
 		panel.add(p3);
+      panel.add(new JSeparator());
 		panel.add(p4);
       
 		//this.add(panel); //added everything to main panel
