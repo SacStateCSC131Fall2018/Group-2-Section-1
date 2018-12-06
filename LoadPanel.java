@@ -15,38 +15,57 @@ public class LoadPanel extends JPanel
    private void setLayout()
    {
       JPanel MAINPANEL = new JPanel();  // This panel is the mail panel and holds all the other panels
-		JPanel panel = new JPanel(new GridLayout(3,0)); //this panel creates a grid holds three panels
-		JPanel p1 = new JPanel(new FlowLayout());
-		JPanel p2 = new JPanel(new BorderLayout());
-		JPanel p3 = new JPanel(new FlowLayout());
 		
-		JTextField topTxt = new JTextField("",30);
+      JPanel panel = new JPanel(new GridLayout(5,0)); //this panel creates a grid holds three panels
+		
+      JPanel p1 = new JPanel(new FlowLayout());
+		JPanel p1subPanel = new JPanel(new FlowLayout());
+      
+      JPanel p2 = new JPanel(new BorderLayout());
+		
+      JPanel p3 = new JPanel(new BorderLayout());
+		JPanel p3subPanel = new JPanel(new FlowLayout());
+		
+      JPanel p4 = new JPanel(new BorderLayout());
+      
+      JTextField topTxt = new JTextField("",93);
 		JLabel topLabel = new JLabel("TextFile:");
+      
+      JButton browseButton = new JButton("Browse");
 		
 		String[] file = {"Project Guten Burge File"};
 		JComboBox types = new JComboBox(file); //Drop down menu
-		JLabel fileType = new JLabel("Text File Type:");
+		JLabel fileType = new JLabel(" Text File Type:");
 		
 		
-		JTextField tf = new JTextField("",12);
+		JTextField tf = new JTextField("",48);
 		JLabel label = new JLabel("Title:");
-		JTextField tf2 = new JTextField("",12);
+		JTextField tf2 = new JTextField("",48);
 		JLabel label2 = new JLabel("Author:");
+      
+      JButton processButton = new JButton("Process");
 		
-		p1.add(topLabel);
-		p1.add(topTxt);
+      
+		p1subPanel.add(topLabel);
+		p1subPanel.add(topTxt);
+      p1subPanel.add(browseButton);
+      p1.add(p1subPanel, BorderLayout.WEST);
       
 		p2.add(fileType, BorderLayout.WEST);
 		p2.add(types, BorderLayout.CENTER);
       
-		p3.add(label);
-		p3.add(tf);
-		p3.add(label2);
-		p3.add(tf2);
+		p3subPanel.add(label);
+		p3subPanel.add(tf);
+		p3subPanel.add(label2);
+		p3subPanel.add(tf2);
+		p3.add(p3subPanel, BorderLayout.WEST);
       
+		p4.add(processButton, BorderLayout.WEST);
+		
 		panel.add(p1);
 		panel.add(p2);
 		panel.add(p3);
+		panel.add(p4);
       
 		MAINPANEL.add(panel); //added everything to main panel
 		
