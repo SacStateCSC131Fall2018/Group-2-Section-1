@@ -47,5 +47,25 @@ public class LoadPanel extends JPanel
 		MAINPANEL.add(panel); //added everything to main panel
 		
 		frame.getContentPane().add(MAINPANEL, BorderLayout.NORTH);
+      
+      //add text area to loadPanel
+ 		JTextArea textArea = new JTextArea(
+			    "Opus: \n" +
+			    "Title: \n" +
+			    "Author: \n" +
+			    "Opus Size: \n"+
+             "Opus Number; \n"+
+             "New Index terms: \n"+
+             "New Postings: \n"+
+             "Total Index terms: \n"+
+             "Total Postings: \n"
+			    
+	   );
+		JScrollPane sp = new JScrollPane(textArea);
+		
+		frame.getContentPane().add(sp, BorderLayout.CENTER);
+   
+   
+   
    }
 }
