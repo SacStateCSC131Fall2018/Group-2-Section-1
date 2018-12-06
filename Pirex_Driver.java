@@ -23,7 +23,7 @@ public class Pirex_Driver {
       
       //Creats and adds summary panel to tabs
       SummaryState sum = new SummaryState();
-      tabs.AddPanel("Summary", sum, "Summary of all the opuses");
+      tabs.AddPanel("Summarize Documents", sum, "Summary of all the opuses");
       
       //add the tabs to our main window
       MenuBar new_menu = new MenuBar();
