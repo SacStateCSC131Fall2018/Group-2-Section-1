@@ -30,8 +30,8 @@ public class LoadPanel extends JPanel
 		
       JPanel p4 = new JPanel(new BorderLayout());
       
-      JTextField topTxt = new JTextField("",93);
-		JLabel topLabel = new JLabel("TextFile:");
+      JTextField fileTextField = new JTextField("",93);
+		JLabel txtFile = new JLabel("TextFile:");
 
 		JButton browseButton = new JButton("Browse");
 
@@ -49,24 +49,24 @@ public class LoadPanel extends JPanel
       JButton processButton = new JButton("Process");
 		
       
-		p1subPanel.add(topLabel);
-		p1subPanel.add(topTxt);
+		p1subPanel.add(txtFile); 
+		p1subPanel.add(fileTextField);
       p1subPanel.add(browseButton);
       p1.add(p1subPanel, BorderLayout.WEST);
       
-		p2.add(fileType, BorderLayout.WEST);
+		p2.add(fileType, BorderLayout.WEST); //file with dropdown
 		p2.add(types, BorderLayout.CENTER);
       
-		p3subPanel.add(label);
+		p3subPanel.add(label); //adds title/author with txt boxes
 		p3subPanel.add(tf);
 		p3subPanel.add(label2);
 		p3subPanel.add(tf2);
 		p3.add(p3subPanel, BorderLayout.WEST);
       
-		p4.add(processButton, BorderLayout.WEST);
+		p4.add(processButton, BorderLayout.WEST); //adds button
 		
 
-		panel.add(p1);
+		panel.add(p1); //this adds to the panel that goes inside the main panel
 		panel.add(p2);
 		panel.add(p3);
 		panel.add(p4);
