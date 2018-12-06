@@ -49,8 +49,8 @@ public class LoadPanel extends JPanel
       JButton processButton = new JButton("Process");
 		
       
-		p1subPanel.add(txtFile); 
-		p1subPanel.add(fileTextField);
+		p1subPanel.add(fileTextField); 
+		p1subPanel.add(txtFile);
       p1subPanel.add(browseButton);
       p1.add(p1subPanel, BorderLayout.WEST);
       
