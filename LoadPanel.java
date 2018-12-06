@@ -30,7 +30,7 @@ public class LoadPanel extends JPanel
 		
       JPanel p4 = new JPanel(new BorderLayout());
       
-      JTextField fileTextField = new JTextField("",93);
+      JTextField fileTextField = new JTextField("",90);
 		JLabel textFileLabel = new JLabel("TextFile:");
 
 		JButton browseButton = new JButton("Browse");
