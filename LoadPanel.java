@@ -71,9 +71,9 @@ public class LoadPanel extends JPanel
 		panel.add(p3);
 		panel.add(p4);
       
-		MAINPANEL.add(panel); //added everything to main panel
+		//this.add(panel); //added everything to main panel
 		
-		frame.getContentPane().add(MAINPANEL, BorderLayout.NORTH);
+		//frame.getContentPane().add(MAINPANEL, BorderLayout.NORTH);
       
       //add text area to loadPanel
  		JTextArea textArea = new JTextArea(
@@ -90,7 +90,7 @@ public class LoadPanel extends JPanel
 	   );
 		JScrollPane sp = new JScrollPane(textArea);
 		
-		frame.getContentPane().add(sp, BorderLayout.CENTER);
+		this.add(sp, BorderLayout.CENTER);
    
    
 		
