@@ -22,6 +22,7 @@ public class LoadPanel extends JPanel
 		
 		JTextField topTxt = new JTextField("",30);
 		JLabel topLabel = new JLabel("TextFile:");
+		Jbutton browseButton = new JButton("Browse");
 		
 		String[] file = {"Project Guten Burge File"};
 		JComboBox types = new JComboBox(file); //Drop down menu
@@ -35,12 +36,16 @@ public class LoadPanel extends JPanel
 		
 		p1.add(topLabel);
 		p1.add(topTxt);
+		p1.add(browseButton);
+		
 		p2.add(fileType);
 		p2.add(types);
+		
 		p3.add(label);
 		p3.add(tf);
 		p3.add(label2);
 		p3.add(tf2);
+		
 		panel.add(p1);
 		panel.add(p2);
 		panel.add(p3);
