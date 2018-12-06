@@ -20,7 +20,7 @@ public class LoadPanel extends JPanel
 		
       JPanel panel = new JPanel(new GridLayout(5,0)); //this panel creates a grid holds three panels
 		
-      JPanel p1 = new JPanel(new FlowLayout());
+      JPanel p1 = new JPanel(new BorderLayout());
 		JPanel p1subPanel = new JPanel(new FlowLayout());
       
       JPanel p2 = new JPanel(new BorderLayout());
@@ -31,7 +31,7 @@ public class LoadPanel extends JPanel
       JPanel p4 = new JPanel(new BorderLayout());
       
       JTextField fileTextField = new JTextField("",93);
-		JLabel txtFile = new JLabel("TextFile:");
+		JLabel textFileLabel = new JLabel("TextFile:");
 
 		JButton browseButton = new JButton("Browse");
 
@@ -49,8 +49,8 @@ public class LoadPanel extends JPanel
       JButton processButton = new JButton("Process");
 		
       
-		p1subPanel.add(fileTextField); 
-		p1subPanel.add(txtFile);
+		p1subPanel.add(textFileLabel); 
+		p1subPanel.add(fileTextField);
       p1subPanel.add(browseButton);
       p1.add(p1subPanel, BorderLayout.WEST);
       
