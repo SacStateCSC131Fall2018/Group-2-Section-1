@@ -36,7 +36,7 @@ public class LoadPanel extends JPanel
 		JButton browseButton = new JButton("Browse");
 
 		
-		String[] file = {"Project Guten Burge File","The Book Of Anand", "Anand and The Three Little Pigs","What The Anand"};
+		String[] file = {"Project Guten Burge File","The File Of Anand", "Anand and The Three Little Pigs File","What The Anand File"};
 		JComboBox types = new JComboBox(file); //Drop down menu
 		JLabel fileType = new JLabel(" Text File Type:");
 		
