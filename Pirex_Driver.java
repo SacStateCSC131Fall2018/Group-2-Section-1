@@ -19,7 +19,7 @@ public class Pirex_Driver {
       
       //add the tabs to our main window
       MenuBar new_menu = new MenuBar();
-      main.add(tabs);
+      main.add(tabs, BorderLayout.CENTER);
       main.getContentPane().add(new_menu, BorderLayout.NORTH);
       
 		
