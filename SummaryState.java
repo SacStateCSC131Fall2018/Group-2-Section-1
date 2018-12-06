@@ -15,8 +15,8 @@ public class SummaryState extends JFrame{
       setLayout(new FlowLayout());
       JLabel textBox = new JLabel("");
       textBox.setVerticalAlignment(JLabel.TOP);
-      textBox.setPreferredSize(new Dimension(800,400));
       JScrollPane scroll = new JScrollPane(textBox);
+      scroll.setPreferredSize(new Dimension(800,400));
       scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
       JTabbedPane tab = new JTabbedPane();
       tab.addTab("Summarize Document",scroll);
