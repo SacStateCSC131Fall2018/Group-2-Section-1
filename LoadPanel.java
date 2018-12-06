@@ -14,7 +14,9 @@ public class LoadPanel extends JPanel
    //Set layout of the load panel
    private void setLayout()
    {
-      JPanel MAINPANEL = new JPanel();  // This panel is the mail panel and holds all the other panels
+
+      this.setLayout(new BorderLayout());
+
 		
       JPanel panel = new JPanel(new GridLayout(5,0)); //this panel creates a grid holds three panels
 		
@@ -30,8 +32,9 @@ public class LoadPanel extends JPanel
       
       JTextField topTxt = new JTextField("",93);
 		JLabel topLabel = new JLabel("TextFile:");
-      
-      JButton browseButton = new JButton("Browse");
+
+		JButton browseButton = new JButton("Browse");
+
 		
 		String[] file = {"Project Guten Burge File"};
 		JComboBox types = new JComboBox(file); //Drop down menu
@@ -62,6 +65,7 @@ public class LoadPanel extends JPanel
       
 		p4.add(processButton, BorderLayout.WEST);
 		
+
 		panel.add(p1);
 		panel.add(p2);
 		panel.add(p3);
@@ -89,6 +93,8 @@ public class LoadPanel extends JPanel
 		frame.getContentPane().add(sp, BorderLayout.CENTER);
    
    
-   
+		
+		this.add(panel, BorderLayout.NORTH);
+
    }
 }
